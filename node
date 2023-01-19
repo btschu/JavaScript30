@@ -1,0 +1,242 @@
+Script started on Wed Jan 18 19:53:52 2023
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro JavaScript30 % [K[?2004hnno
+[Jnocorrect   node        noglob      nohup       nologin     notifyd     notifyutil[A[0m[27m[24m[54Cno[Kde sc
+[J[A[61Cript.js[?2004l
+[Jnode:internal/modules/cjs/loader:959
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/brandonschumacher/Library/Mobile Documents/com~apple~CloudDocs/Coding/JavaScript30/script.js'
+[90m    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:956:15)[39m
+[90m    at Function.Module._load (node:internal/modules/cjs/loader:804:27)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:17:47[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: []
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro JavaScript30 % [K[?2004hccd c  lls[?2004l
+01 - JavaScript Drum Kit				18 - Adding Up Times with Reduce
+02 - JS and CSS Clock					19 - Webcam Fun
+03 - CSS Variables					20 - Speech Detection
+04 - Array Cardio Day 1					21 - Geolocation
+05 - Flex Panel Gallery					22 - Follow Along Link Highlighter
+06 - Type Ahead						23 - Speech Synthesis
+07 - Array Cardio Day 2					24 - Sticky Nav
+08 - Fun with HTML5 Canvas				25 - Event Capture, Propagation, Bubbling and Once
+09 - Dev Tools Domination				26 - Stripe Follow Along Nav
+10 - Hold Shift and Check Checkboxes			27 - Click and Drag
+11 - Custom Video Player				28 - Video Speed Controller
+12 - Key Sequence Detection				29 - Countdown Timer
+13 - Slide in on Scroll					30 - Whack A Mole
+14 - JavaScript References VS Copying			PULL_REQUEST_TEMPLATE.md
+15 - LocalStorage					node
+16 - Mouse Move Shadow					readme.md
+17 - Sort Without Articles
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro JavaScript30 % [K[?2004hccd 04\ -\ Array\ Cardio\ Day\ 1[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnnode   n  cd 04\ -\ Array\ Cardio\ Day\ 1[31Dls                             [29Dnode script.js[?2004l
+┌─────────┬─────────────┬───────────────┬──────┬────────┐
+│ (index) │    first    │     last      │ year │ passed │
+├─────────┼─────────────┼───────────────┼──────┼────────┤
+│    0    │   [32m'Lise'[39m    │   [32m'Meitner'[39m   │ [33m1878[39m │  [33m1968[39m  │
+│    1    │    [32m'Max'[39m    │   [32m'Planck'[39m    │ [33m1858[39m │  [33m1947[39m  │
+│    2    │   [32m'Isaac'[39m   │   [32m'Newton'[39m    │ [33m1643[39m │  [33m1727[39m  │
+│    3    │ [32m'Katherine'[39m │  [32m'Blodgett'[39m   │ [33m1898[39m │  [33m1979[39m  │
+│    4    │   [32m'Hanna'[39m   │ [32m'Hammarström'[39m │ [33m1829[39m │  [33m1909[39m  │
+│    5    │  [32m'Galileo'[39m  │   [32m'Galilei'[39m   │ [33m1564[39m │  [33m1642[39m  │
+│    6    │  [32m'Albert'[39m   │  [32m'Einstein'[39m   │ [33m1879[39m │  [33m1955[39m  │
+│    7    │ [32m'Nicolaus'[39m  │ [32m'Copernicus'[39m  │ [33m1473[39m │  [33m1543[39m  │
+│    8    │   [32m'Marie'[39m   │    [32m'Curie'[39m    │ [33m1867[39m │  [33m1934[39m  │
+│    9    │ [32m'Johannes'[39m  │   [32m'Kepler'[39m    │ [33m1571[39m │  [33m1630[39m  │
+│   10    │ [32m'Sarah E.'[39m  │    [32m'Goode'[39m    │ [33m1855[39m │  [33m1905[39m  │
+│   11    │    [32m'Ada'[39m    │  [32m'Lovelace'[39m   │ [33m1815[39m │  [33m1852[39m  │
+└─────────┴─────────────┴───────────────┴──────┴────────┘
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hclear     clearnode script.js[?2004l
+┌─────────┬─────────────┬───────────────┬──────┬────────┐
+│ (index) │    first    │     last      │ year │ passed │
+├─────────┼─────────────┼───────────────┼──────┼────────┤
+│    0    │   [32m'Lise'[39m    │   [32m'Meitner'[39m   │ [33m1878[39m │  [33m1968[39m  │
+│    1    │    [32m'Max'[39m    │   [32m'Planck'[39m    │ [33m1858[39m │  [33m1947[39m  │
+│    2    │   [32m'Isaac'[39m   │   [32m'Newton'[39m    │ [33m1643[39m │  [33m1727[39m  │
+│    3    │ [32m'Katherine'[39m │  [32m'Blodgett'[39m   │ [33m1898[39m │  [33m1979[39m  │
+│    4    │   [32m'Hanna'[39m   │ [32m'Hammarström'[39m │ [33m1829[39m │  [33m1909[39m  │
+│    5    │  [32m'Galileo'[39m  │   [32m'Galilei'[39m   │ [33m1564[39m │  [33m1642[39m  │
+│    6    │  [32m'Albert'[39m   │  [32m'Einstein'[39m   │ [33m1879[39m │  [33m1955[39m  │
+│    7    │ [32m'Nicolaus'[39m  │ [32m'Copernicus'[39m  │ [33m1473[39m │  [33m1543[39m  │
+│    8    │   [32m'Marie'[39m   │    [32m'Curie'[39m    │ [33m1867[39m │  [33m1934[39m  │
+│    9    │ [32m'Johannes'[39m  │   [32m'Kepler'[39m    │ [33m1571[39m │  [33m1630[39m  │
+│   10    │ [32m'Sarah E.'[39m  │    [32m'Goode'[39m    │ [33m1855[39m │  [33m1905[39m  │
+│   11    │    [32m'Ada'[39m    │  [32m'Lovelace'[39m   │ [33m1815[39m │  [33m1852[39m  │
+└─────────┴─────────────┴───────────────┴──────┴────────┘
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+[ [32m'Bethea'[39m, [32m'Erin'[39m ]
+[ [32m'Becker'[39m, [32m'Carl'[39m ]
+[ [32m'Bentsen'[39m, [32m'Lloyd'[39m ]
+[ [32m'Beckett'[39m, [32m'Samuel'[39m ]
+[ [32m'Blake'[39m, [32m'William'[39m ]
+[ [32m'Berger'[39m, [32m'Ric'[39m ]
+[ [32m'Beddoes'[39m, [32m'Mick'[39m ]
+[ [32m'Beethoven'[39m, [32m'Ludwig'[39m ]
+[ [32m'Belloc'[39m, [32m'Hilaire'[39m ]
+[ [32m'Begin'[39m, [32m'Menachem'[39m ]
+[ [32m'Bellow'[39m, [32m'Saul'[39m ]
+[ [32m'Benchley'[39m, [32m'Robert'[39m ]
+[ [32m'Blair'[39m, [32m'Robert'[39m ]
+[ [32m'Benenson'[39m, [32m'Peter'[39m ]
+[ [32m'Benjamin'[39m, [32m'Walter'[39m ]
+[ [32m'Berlin'[39m, [32m'Irving'[39m ]
+[ [32m'Benn'[39m, [32m'Tony'[39m ]
+[ [32m'Benson'[39m, [32m'Leana'[39m ]
+[ [32m'Bent'[39m, [32m'Silas'[39m ]
+[ [32m'Berle'[39m, [32m'Milton'[39m ]
+[ [32m'Berry'[39m, [32m'Halle'[39m ]
+[ [32m'Biko'[39m, [32m'Steve'[39m ]
+[ [32m'Beck'[39m, [32m'Glenn'[39m ]
+[ [32m'Bergman'[39m, [32m'Ingmar'[39m ]
+[ [32m'Black'[39m, [32m'Elk'[39m ]
+[ [32m'Berio'[39m, [32m'Luciano'[39m ]
+[ [32m'Berne'[39m, [32m'Eric'[39m ]
+[ [32m'Berra'[39m, [32m'Yogi'[39m ]
+[ [32m'Berry'[39m, [32m'Wendell'[39m ]
+[ [32m'Bevan'[39m, [32m'Aneurin'[39m ]
+[ [32m'Ben-Gurion'[39m, [32m'David'[39m ]
+[ [32m'Bevel'[39m, [32m'Ken'[39m ]
+[ [32m'Biden'[39m, [32m'Joseph'[39m ]
+[ [32m'Bennington'[39m, [32m'Chester'[39m ]
+[ [32m'Bierce'[39m, [32m'Ambrose'[39m ]
+[ [32m'Billings'[39m, [32m'Josh'[39m ]
+[ [32m'Birrell'[39m, [32m'Augustine'[39m ]
+[ [32m'Blair'[39m, [32m'Tony'[39m ]
+[ [32m'Beecher'[39m, [32m'Henry'[39m ]
+[ [32m'Biondo'[39m, [32m'Frank'[39m ]
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+/Users/brandonschumacher/Library/Mobile Documents/com~apple~CloudDocs/Coding/JavaScript30/04 - Array Cardio Day 1/script.js:115
+        console.log(parts);
+                    ^
+
+ReferenceError: parts is not defined
+    at [90m/Users/brandonschumacher/Library/Mobile Documents/com~apple~CloudDocs/Coding/JavaScript30/04 - Array Cardio Day 1/[39mscript.js:115:21
+    at Array.sort (<anonymous>)
+    at Object.<anonymous> [90m(/Users/brandonschumacher/Library/Mobile Documents/com~apple~CloudDocs/Coding/JavaScript30/04 - Array Cardio Day 1/[39mscript.js:113:35[90m)[39m
+[90m    at Module._compile (node:internal/modules/cjs/loader:1126:14)[39m
+[90m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)[39m
+[90m    at Module.load (node:internal/modules/cjs/loader:1004:32)[39m
+[90m    at Function.Module._load (node:internal/modules/cjs/loader:839:12)[39m
+[90m    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)[39m
+[90m    at node:internal/main/run_main_module:17:47[39m
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+Bethea Erin
+Becker Carl
+Bentsen Lloyd
+Beckett Samuel
+Blake William
+Berger Ric
+Beddoes Mick
+Beethoven Ludwig
+Belloc Hilaire
+Begin Menachem
+Bellow Saul
+Benchley Robert
+Blair Robert
+Benenson Peter
+Benjamin Walter
+Berlin Irving
+Benn Tony
+Benson Leana
+Bent Silas
+Berle Milton
+Berry Halle
+Biko Steve
+Beck Glenn
+Bergman Ingmar
+Black Elk
+Berio Luciano
+Berne Eric
+Berra Yogi
+Berry Wendell
+Bevan Aneurin
+Ben-Gurion David
+Bevel Ken
+Biden Joseph
+Bennington Chester
+Bierce Ambrose
+Billings Josh
+Birrell Augustine
+Blair Tony
+Beecher Henry
+Biondo Frank
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+[
+  [32m'Blake, William'[39m,      [32m'Blair, Robert'[39m,
+  [32m'Blair, Tony'[39m,         [32m'Black, Elk'[39m,
+  [32m'Birrell, Augustine'[39m,  [32m'Biondo, Frank'[39m,
+  [32m'Billings, Josh'[39m,      [32m'Biko, Steve'[39m,
+  [32m'Bierce, Ambrose'[39m,     [32m'Biden, Joseph'[39m,
+  [32m'Bevel, Ken'[39m,          [32m'Bevan, Aneurin'[39m,
+  [32m'Bethea, Erin'[39m,        [32m'Berry, Halle'[39m,
+  [32m'Berry, Wendell'[39m,      [32m'Berra, Yogi'[39m,
+  [32m'Bernhard, Sandra'[39m,    [32m'Berne, Eric'[39m,
+  [32m'Berlin, Irving'[39m,      [32m'Berle, Milton'[39m,
+  [32m'Berio, Luciano'[39m,      [32m'Bergman, Ingmar'[39m,
+  [32m'Berger, Ric'[39m,         [32m'Bentsen, Lloyd'[39m,
+  [32m'Bent, Silas'[39m,         [32m'Benson, Leana'[39m,
+  [32m'Bennington, Chester'[39m, [32m'Benn, Tony'[39m,
+  [32m'Benjamin, Walter'[39m,    [32m'Benenson, Peter'[39m,
+  [32m'Benchley, Robert'[39m,    [32m'Ben-Gurion, David'[39m,
+  [32m'Bellow, Saul'[39m,        [32m'Belloc, Hilaire'[39m,
+  [32m'Begin, Menachem'[39m,     [32m'Beethoven, Ludwig'[39m,
+  [32m'Beecher, Henry'[39m,      [32m'Beddoes, Mick'[39m,
+  [32m'Beckett, Samuel'[39m,     [32m'Becker, Carl'[39m,
+  [32m'Beck, Glenn'[39m
+]
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+[
+  [32m'Beck, Glenn'[39m,         [32m'Becker, Carl'[39m,
+  [32m'Beckett, Samuel'[39m,     [32m'Beddoes, Mick'[39m,
+  [32m'Beecher, Henry'[39m,      [32m'Beethoven, Ludwig'[39m,
+  [32m'Begin, Menachem'[39m,     [32m'Belloc, Hilaire'[39m,
+  [32m'Bellow, Saul'[39m,        [32m'Ben-Gurion, David'[39m,
+  [32m'Benchley, Robert'[39m,    [32m'Benenson, Peter'[39m,
+  [32m'Benjamin, Walter'[39m,    [32m'Benn, Tony'[39m,
+  [32m'Bennington, Chester'[39m, [32m'Benson, Leana'[39m,
+  [32m'Bent, Silas'[39m,         [32m'Bentsen, Lloyd'[39m,
+  [32m'Berger, Ric'[39m,         [32m'Bergman, Ingmar'[39m,
+  [32m'Berio, Luciano'[39m,      [32m'Berle, Milton'[39m,
+  [32m'Berlin, Irving'[39m,      [32m'Berne, Eric'[39m,
+  [32m'Bernhard, Sandra'[39m,    [32m'Berra, Yogi'[39m,
+  [32m'Berry, Wendell'[39m,      [32m'Berry, Halle'[39m,
+  [32m'Bethea, Erin'[39m,        [32m'Bevan, Aneurin'[39m,
+  [32m'Bevel, Ken'[39m,          [32m'Biden, Joseph'[39m,
+  [32m'Bierce, Ambrose'[39m,     [32m'Biko, Steve'[39m,
+  [32m'Billings, Josh'[39m,      [32m'Biondo, Frank'[39m,
+  [32m'Birrell, Augustine'[39m,  [32m'Black, Elk'[39m,
+  [32m'Blair, Tony'[39m,         [32m'Blair, Robert'[39m,
+  [32m'Blake, William'[39m
+]
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+[
+  [32m'Beck, Glenn'[39m,         [32m'Becker, Carl'[39m,
+  [32m'Beckett, Samuel'[39m,     [32m'Beddoes, Mick'[39m,
+  [32m'Beecher, Henry'[39m,      [32m'Beethoven, Ludwig'[39m,
+  [32m'Begin, Menachem'[39m,     [32m'Belloc, Hilaire'[39m,
+  [32m'Bellow, Saul'[39m,        [32m'Ben-Gurion, David'[39m,
+  [32m'Benchley, Robert'[39m,    [32m'Benenson, Peter'[39m,
+  [32m'Benjamin, Walter'[39m,    [32m'Benn, Tony'[39m,
+  [32m'Bennington, Chester'[39m, [32m'Benson, Leana'[39m,
+  [32m'Bent, Silas'[39m,         [32m'Bentsen, Lloyd'[39m,
+  [32m'Berger, Ric'[39m,         [32m'Bergman, Ingmar'[39m,
+  [32m'Berio, Luciano'[39m,      [32m'Berle, Milton'[39m,
+  [32m'Berlin, Irving'[39m,      [32m'Berne, Eric'[39m,
+  [32m'Bernhard, Sandra'[39m,    [32m'Berra, Yogi'[39m,
+  [32m'Berry, Wendell'[39m,      [32m'Berry, Halle'[39m,
+  [32m'Bethea, Erin'[39m,        [32m'Bevan, Aneurin'[39m,
+  [32m'Bevel, Ken'[39m,          [32m'Biden, Joseph'[39m,
+  [32m'Bierce, Ambrose'[39m,     [32m'Biko, Steve'[39m,
+  [32m'Billings, Josh'[39m,      [32m'Biondo, Frank'[39m,
+  [32m'Birrell, Augustine'[39m,  [32m'Black, Elk'[39m,
+  [32m'Blair, Tony'[39m,         [32m'Blair, Robert'[39m,
+  [32m'Blake, William'[39m
+]
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004hnode script.js[?2004l
+{ car: [33m5[39m, truck: [33m3[39m, bike: [33m2[39m, walk: [33m2[39m, van: [33m2[39m }
+[1m[7m%[27m[1m[0m                                                                                                                                                             [0m[27m[24m[Jbrandonschumacher@Brandons-MacBook-Pro 04 - Array Cardio Day 1 % [K[?2004h
