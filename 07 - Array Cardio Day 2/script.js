@@ -17,12 +17,66 @@
 
   //todo Some and Every Checks
   //todo Array.prototype.some() // is at least one person 19 or older?
+  //one way
+  // const isAdult = people.some(function(person) {
+  //   const currentYear = (new Date()).getFullYear();
+  //   if(currentYear - person.year >= 19) {
+  //     return true;
+  //   }
+  // })
+  // console.log(isAdult);
+
+  //another way
+  // const isAdult = people.some(person => {
+  //   const currentYear = (new Date()).getFullYear();
+  //   return currentYear - person.year >= 19;
+  // })
+
+  // console.log(isAdult);
+
+  //and another way
+  // const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+
+  // console.log(isAdult);
+
   //todo Array.prototype.every() // is everyone 19 or older?
+  // const allAdults = people.every(person => ((new Date()).getFullYear()) - person.year >= 19);
+
+  // console.log(allAdults);
 
   //todo Array.prototype.find()
   //todo Find is like filter, but instead returns just the one you are looking for
   //todo find the comment with the ID of 823423
+  //one way
+  // const comment = comments.find(function(comment) {
+  //   if(comment.id === 823423) {
+  //     return true;
+  //   }
+  // })
+  // console.log(comment);
+
+  //another way
+  // const comment = comments.find(comment => comment.id === 823423);
+
+  // console.log(comment);
 
   //todo Array.prototype.findIndex()
   //todo Find the comment with this ID
   //todo delete the comment with the ID of 823423
+  // const index = comments.findIndex(comment => comment.id === 823423);
+
+  // console.log(index);
+
+  //todo delete the item we just found (need to uncomment above to make this work)
+  
+  //one method
+  // comments.splice(index, 1);
+
+  //another method
+
+  // const newComments = [
+  //   ...comments.slice(0, index),
+  //   ...comments.slice(index + 1)
+  // ];
+  // console.log('original array', comments);
+  // console.log('new array', newComments);
